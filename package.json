@@ -1,7 +1,7 @@
 {
   "name": "grunt-docco",
   "description": "Grunt Docco plugin.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/DavidSouther/grunt-docco",
   "author": {
     "name": "David Souther",
@@ -21,8 +21,6 @@
       "url": "https://github.com/DavidSouther/grunt-docco/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "grunt.js",
-  "bin": "bin/grunt-docco",
   "engines": {
     "node": "*"
   },
@@ -30,7 +28,8 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "grunt": "~0.3.9"
+    "grunt": "~0.3.9",
+    "docco": "0.3.0"
   },
   "devDependencies": {
     "grunt": "~0.3.9"
