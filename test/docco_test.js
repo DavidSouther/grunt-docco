@@ -1,34 +1,18 @@
-var grunt = require('grunt');
+var grunt = require("grunt");
+var rr =require("rimraf");
 
-/*
-  ======== A Handy Little Nodeunit Reference ========
-  https://github.com/caolan/nodeunit
+exports.docco = {
+  main: function(test) {
+     var expectSimple = "test";
 
-  Test methods:
-    test.expect(numAssertions)
-    test.done()
-  Test assertions:
-    test.ok(value, [message])
-    test.equal(actual, expected, [message])
-    test.notEqual(actual, expected, [message])
-    test.deepEqual(actual, expected, [message])
-    test.notDeepEqual(actual, expected, [message])
-    test.strictEqual(actual, expected, [message])
-    test.notStrictEqual(actual, expected, [message])
-    test.throws(block, [error], [message])
-    test.doesNotThrow(block, [error], [message])
-    test.ifError(value)
-*/
+     var css = grunt.file.read("docs/docco.css");
+     var html = grunt.file.read("docs/docco.html");
 
-exports['docco'] = {
-  setUp: function(done) {
-    // setup here
-    done();
-  },
-  'helper': function(test) {
-    test.expect(0);
-    // tests here
-    // test.equal(grunt.helper('docco'), 'docco!!!', 'should return the correct value.');
-    test.done();
+     test.expect(2);
+     test.equal(css.length, 7101, "Should create CSS.");
+     test.equal(html.length, 1017,"Should create HTML.")
+     test.done();
+
+     rr('docs', function(){});
   }
 };
