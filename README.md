@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/DavidSouther/grunt-docco.png)](http://travis-ci.org/DavidSouther/grunt-docco)
 # grunt-docco
 
 Grunt Docco plugin.
