@@ -9,7 +9,7 @@ exports.docco = {
      var html = grunt.file.read("docs/docco.html");
 
      test.expect(2);
-     test.equal(css.length, 7101, "Should create CSS.");
+     test.equal(css.length, 7207, "Should create CSS.");
      test.equal(html.length, 1017,"Should create HTML.")
      test.done();
 
