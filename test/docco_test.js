@@ -10,7 +10,7 @@ exports.docco = {
 
      test.expect(2);
      test.equal(css.length, 7207, "Should create CSS.");
-     test.equal(html.length, 1017,"Should create HTML.")
+     test.equal(html.length, 1017, "Should create HTML.");
      test.done();
 
      rr('docs', function(){});

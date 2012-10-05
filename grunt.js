@@ -45,6 +45,6 @@ module.exports = function(grunt) {
 	grunt.loadTasks('tasks');
 
 	// Default task.
-	grunt.registerTask('default', 'lint test docco');
+	grunt.registerTask('default', 'lint docco');
 
 };
