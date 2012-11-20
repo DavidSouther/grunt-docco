@@ -15,7 +15,15 @@ grunt.loadNpmTasks('grunt-docco');
 [getting_started]: https://github.com/cowboy/grunt/blob/master/docs/getting_started.md
 
 ## Documentation
-_(Coming soon)_
+```
+docco: {
+  debug {
+    src: ['test/**/*.js'],
+    dest: 'docs/'
+  }
+}
+
+```
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].
