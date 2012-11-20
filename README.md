@@ -17,7 +17,7 @@ grunt.loadNpmTasks('grunt-docco');
 ## Documentation
 ```
 docco: {
-  debug {
+  debug: {
     src: ['test/**/*.js'],
     dest: 'docs/'
   }
