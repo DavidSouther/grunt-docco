@@ -4,31 +4,21 @@
 // Copyright (c) 2012 David Souther
 // Licensed under the MIT license.
 
+"use strict"
+var docco = require('docco');
+
 module.exports = function(grunt) {
-
-  var docco = require('docco');
-
-
-  // ### TASKS
   grunt.registerMultiTask('docco', 'Docco processor.', function() {
-    var options, tmp;
-
-    tmp = grunt.config(['docco', this.target, 'options']);
-    if (typeof tmp === 'object') {
-      grunt.verbose.writeln('Using "' + this.target + '" Docco options.');
-      options = tmp;
-    } else {
-      grunt.verbose.writeln('Using master Docco options.');
-      options = grunt.config('jshint.options');
-    }
-    grunt.verbose.writeflags(options, 'Options');
-
-    var done = this.async();
-    var src = grunt.file.expandFiles(this.file.src);
-
-    docco.document(src, options, function(err, result, code){
-      grunt.log.writeln("Doccoed [" + src.join(", ") + "]; " + err ? err : "(No errors)" + "\n" + result + " " + code);
-      done();
+    var options = this.options({ output: this.file.dest }),
+        _this = this,
+        files = this.file.src,
+        fdone = 0;
+    var done = _this.async();
+    files.forEach(function(file) {
+      var files = grunt.file.expandFiles(file);
+      docco.document(files, options, function(err, result, code){
+        if(fdone++ == files.length) done();
+      });
     });
   });
 };

@@ -1,9 +1,9 @@
-var grunt = require("grunt");
-var rr =require("rimraf");
+"use strict"
+var grunt = require('grunt');
+var rr = require("rimraf");
 
 exports.docco = {
-  main: function(test) {
-     var expectSimple = "test";
+  tests: function(test) {
 
      var css = grunt.file.read("docs/docco.css");
      var html = grunt.file.read("docs/docco.html");
