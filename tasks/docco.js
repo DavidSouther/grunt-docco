@@ -4,17 +4,18 @@
 // Copyright (c) 2012 David Souther
 // Licensed under the MIT license.
 
-"use strict"
+"use strict";
 var docco = require('docco');
 
 module.exports = function(grunt) {
   grunt.registerMultiTask('docco', 'Docco processor.', function() {
-    var fdone = 0;
-    var flength = this.files.length;
-    var done = this.async();
+    var task = this,
+        fdone = 0,
+        flength = this.files.length,
+        done = this.async();
+
     this.files.forEach(function(file) {
-      var files = grunt.file.expand(file.src);
-      docco.document(files, { output: file.dest }, function(err, result, code){
+      docco.document(file.src, task.options({ output: file.dest }), function(){
         if(++fdone === flength) done();
       });
     });

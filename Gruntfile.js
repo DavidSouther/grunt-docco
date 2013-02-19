@@ -7,6 +7,13 @@ module.exports = function(grunt) {
       tests: {
         src: ['test/**/*.js', 'test/**/*.coffee'],
         dest: "docs/"
+      },
+      'custom-css-test': {
+          src: ['test/**/*.js'],
+          dest: 'docs/',
+          options: {
+              css: 'test/fixtures/custom.css'
+          }
       }
     },
     nodeunit: {
@@ -18,7 +25,7 @@ module.exports = function(grunt) {
   grunt.loadTasks('tasks');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.registerTask('test', ['clean:tests', 'docco:tests', 'nodeunit:tests']);
+  grunt.registerTask('test', ['clean:tests', 'docco', 'nodeunit:tests']);
 
   // Default task.
   grunt.registerTask('default', ['lint', 'docco']);
