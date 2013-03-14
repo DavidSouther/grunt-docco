@@ -1,3 +1,5 @@
+"use strict";
+
 module.exports = function(grunt) {
 
   // Project configuration.
@@ -6,14 +8,21 @@ module.exports = function(grunt) {
     docco: {
       tests: {
         src: ['test/**/*.js', 'test/**/*.coffee'],
-        dest: "docs/"
+        options: { output: "docs/" }
       },
       'custom-css-test': {
           src: ['test/**/*.js'],
-          dest: 'docs/',
           options: {
-              css: 'test/fixtures/custom.css'
+              css: 'test/fixtures/custom.css',
+              output: 'docs/'
           }
+      }
+    },
+    jshint: {
+      all: ['Gruntfile.js', 'tasks/**/*.js'],
+      options: {
+        globalstrict: true,
+        node: true
       }
     },
     nodeunit: {
@@ -23,11 +32,12 @@ module.exports = function(grunt) {
 
   // Load local tasks.
   grunt.loadTasks('tasks');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.registerTask('test', ['clean:tests', 'docco', 'nodeunit:tests']);
 
   // Default task.
-  grunt.registerTask('default', ['lint', 'docco']);
+  grunt.registerTask('default', ['jshint', 'docco']);
 
 };
