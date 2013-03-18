@@ -11,11 +11,11 @@ module.exports = function(grunt) {
         options: { output: "docs/" }
       },
       'custom-css-test': {
-          src: ['test/**/*.js'],
-          options: {
-              css: 'test/fixtures/custom.css',
-              output: 'docs/'
-          }
+        src: ['test/**/*.js'],
+        options: {
+            css: 'test/fixtures/custom.css',
+            output: 'docs/'
+        }
       }
     },
     jshint: {
@@ -38,6 +38,6 @@ module.exports = function(grunt) {
   grunt.registerTask('test', ['clean:tests', 'docco', 'nodeunit:tests']);
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'docco']);
+  grunt.registerTask('default', ['jshint', 'clean', 'docco']);
 
 };

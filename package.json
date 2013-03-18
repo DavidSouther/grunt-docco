@@ -29,8 +29,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "docco": "~0.6.1",
-    "underscore": "~1.4.4"
+    "docco": "~0.6.3"
   },
   "devDependencies": {
     "rimraf": "~2.0.2",
