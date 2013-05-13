@@ -4,7 +4,7 @@
 // Copyright (c) 2012 David Souther
 // Licensed under the MIT license.
 
-"use strict";
+'use strict';
 var docco = require('docco');
 
 module.exports = function(grunt) {
@@ -15,7 +15,10 @@ module.exports = function(grunt) {
         done = this.async();
 
     this.files.forEach(function(file) {
-      docco.document(file.src, task.options({ output: file.dest }), function(){
+      var options = task.options({ output: file.dest });
+      options.args = file.src;
+
+      docco.document(options, function(){
         if(++fdone === flength) done();
       });
     });
