@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         done = this.async();
 
     this.files.forEach(function(file) {
-      docco.document(file.src, task.options({ output: file.dest }), function(){
+      docco.document(task.options({ args: file.src, output: file.dest }), function(){
         if(++fdone === flength) done();
       });
     });
