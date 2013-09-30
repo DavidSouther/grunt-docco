@@ -21,7 +21,8 @@ module.exports = function(grunt) {
         src: ['test/**/*.js'],
         dest: 'docs/',
         options: {
-            css: 'test/fixtures/custom.css'
+            css: 'test/fixtures/custom.css',
+            output: 'docs/'
         }
       }
     },
