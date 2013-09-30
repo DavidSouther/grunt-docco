@@ -8,6 +8,14 @@
     "email": "davidsouther@gmail.com",
     "url": "http://www.davidsouther.com"
   },
+  "contributors": [
+    "Asa Ayers <Asa.Ayers@Gmail.com>",
+    "Brad Dougherty <me@brad.is>",
+    "Diego Fernandez <diegof79@gmail.com>",
+    "Ilya Radchenko <ilya@burstcreations.com>",
+    "Sam Breed <sam@quickleft.com>",
+    "Simon Elliott <simon@papercreatures.com>"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/DavidSouther/grunt-docco.git"
