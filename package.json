@@ -1,13 +1,21 @@
 {
   "name": "grunt-docco",
   "description": "Grunt Docco plugin.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://github.com/DavidSouther/grunt-docco",
   "author": {
     "name": "David Souther",
     "email": "davidsouther@gmail.com",
     "url": "http://www.davidsouther.com"
   },
+  "contributors": [
+    "Asa Ayers <Asa.Ayers@Gmail.com>",
+    "Brad Dougherty <me@brad.is>",
+    "Diego Fernandez <diegof79@gmail.com>",
+    "Ilya Radchenko <ilya@burstcreations.com>",
+    "Sam Breed <sam@quickleft.com>",
+    "Simon Elliott <simon@papercreatures.com>"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/DavidSouther/grunt-docco.git"
@@ -29,14 +37,14 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "docco": "~0.6.3"
+    "docco": "~0.6.2"
   },
   "devDependencies": {
     "rimraf": "~2.0.2",
     "grunt": "~0.4.0",
-    "grunt-contrib-nodeunit": "~0.1.2",
-    "grunt-contrib-jshint": "~0.2.0",
-    "grunt-contrib-clean": "~0.4.0"
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-jshint": "~0.6.0"
   },
   "peerDependencies": {
     "grunt": "~0.4.0"

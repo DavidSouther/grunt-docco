@@ -2,14 +2,13 @@
 var grunt = require('grunt');
 var rr = require("rimraf");
 
-exports.docco = {
+module.exports.docco = {
   tearDown: function (callback) {
      rr('docs', function(){});
      callback();
   },
 
   tests: function(test) {
-
      var css = grunt.file.read("docs/docco.css");
      var html = grunt.file.read("docs/docco.html");
 
@@ -20,7 +19,6 @@ exports.docco = {
   },
 
   testCustomCss: function(test) {
-
      var css = grunt.file.read("docs/custom.css");
      var html = grunt.file.read("docs/docco_test.html");
 

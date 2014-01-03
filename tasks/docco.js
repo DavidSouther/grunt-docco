@@ -9,6 +9,8 @@ var docco = require('docco');
 
 module.exports = function(grunt) {
   grunt.registerMultiTask('docco', 'Docco processor.', function() {
+    // Either set the destination in the files block, or (prefferred) in { options: output }
+    this.options.output = this.options.output || (this.file && this.file.dest);
     docco.document(this.options({ args: this.filesSrc }), this.async());
   });
 };
