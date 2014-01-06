@@ -9,6 +9,7 @@
     "url": "http://www.davidsouther.com"
   },
   "contributors": [
+    "Alasdair Mercer <mercer.alasdair@gmail.com>",
     "Asa Ayers <Asa.Ayers@Gmail.com>",
     "Brad Dougherty <me@brad.is>",
     "Diego Fernandez <diegof79@gmail.com>",
@@ -32,18 +33,19 @@
   "engines": {
     "node": "*"
   },
+  "main": "Gruntfile.js",
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
-    "docco": "~0.6.2"
+    "docco": "jashkenas/docco#a35da0022a"
   },
   "devDependencies": {
-    "rimraf": "~2.0.2",
+    "rimraf": "~2.2.5",
     "grunt": "~0.4.0",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-jshint": "~0.6.0"
+    "grunt-contrib-nodeunit": "~0.2.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.8.0"
   },
   "peerDependencies": {
     "grunt": "~0.4.0"
