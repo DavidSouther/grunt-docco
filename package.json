@@ -38,7 +38,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "docco": "jashkenas/docco#a35da0022a"
+    "docco": "jashkenas/docco#d6a7f7dc94"
   },
   "devDependencies": {
     "rimraf": "~2.2.5",
