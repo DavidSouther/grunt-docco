@@ -1,7 +1,7 @@
 {
   "name": "grunt-docco",
   "description": "Grunt Docco plugin.",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "homepage": "https://github.com/DavidSouther/grunt-docco",
   "author": {
     "name": "David Souther",
@@ -45,7 +45,8 @@
     "grunt": "~0.4.0",
     "grunt-contrib-nodeunit": "~0.2.2",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-jshint": "~0.8.0"
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-release": "~0.6.0"
   },
   "peerDependencies": {
     "grunt": "~0.4.0"
