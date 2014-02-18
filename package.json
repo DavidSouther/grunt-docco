@@ -1,7 +1,7 @@
 {
   "name": "grunt-docco",
   "description": "Grunt Docco plugin.",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "homepage": "https://github.com/DavidSouther/grunt-docco",
   "author": {
     "name": "David Souther",
