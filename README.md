@@ -41,5 +41,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 * 0.2.0: Early release, depended on python's pygments.
 
 ## License
-Copyright (c) 2012 David Souther  
+Copyright (c) 2012 - 2014 David Souther et al
 Licensed under the MIT license.
