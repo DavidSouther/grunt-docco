@@ -1,7 +1,7 @@
 {
   "name": "grunt-docco",
   "description": "Grunt Docco plugin.",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "homepage": "https://github.com/DavidSouther/grunt-docco",
   "author": {
     "name": "David Souther",
@@ -38,7 +38,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "docco": "jashkenas/docco#d6a7f7dc94"
+    "docco": "~0.6.3"
   },
   "devDependencies": {
     "rimraf": "~2.2.5",
