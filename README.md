@@ -34,6 +34,7 @@ docco: {
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].
 
 ## Release History
+* 0.4.0: Update to use docco ~0.7.0
 * 0.3.3: Update to use latest official docco version
 * 0.3.2: Update to use newer commit of development docco
 * 0.3.1: Update to use #development docco - fixes several issues with multiple runs.
@@ -41,5 +42,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 * 0.2.0: Early release, depended on python's pygments.
 
 ## License
-Copyright (c) 2012 - 2014 David Souther et al
+Copyright (c) 2012 - 2015 David Souther et al
 Licensed under the MIT license.
