@@ -1,7 +1,7 @@
 {
   "name": "grunt-docco",
   "description": "Grunt Docco plugin.",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "homepage": "https://github.com/DavidSouther/grunt-docco",
   "author": {
     "name": "David Souther",
@@ -19,17 +19,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/DavidSouther/grunt-docco.git"
+    "url": "https://github.com/DavidSouther/grunt-docco.git"
   },
   "bugs": {
     "url": "https://github.com/DavidSouther/grunt-docco/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/DavidSouther/grunt-docco/blob/master/LICENSE-MIT"
-    }
-  ],
+  "license": "MIT",
   "engines": {
     "node": "*"
   },
@@ -41,12 +36,12 @@
     "docco": "~0.7.0"
   },
   "devDependencies": {
-    "rimraf": "~2.2.8",
-    "grunt": "~0.4.0",
-    "grunt-contrib-nodeunit": "~0.4.1",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-jshint": "~0.11.2",
-    "grunt-release": "~0.13.0"
+    "rimraf": "^2.5.4",
+    "grunt": "^1.0.1",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-release": "^0.14.0"
   },
   "peerDependencies": {
     "grunt": ">=0.4.0"
